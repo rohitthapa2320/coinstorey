@@ -49,7 +49,11 @@ const useStyles = makeStyles({
   },
   dltBtn:{
     background: '#e36414',
-    color: 'white'
+    color: 'white',
+    '&:hover':{
+      background: '#e36414',
+      color: 'white',
+    }
   },
   dwnBtn:{
     border: 'solid 1px #e36414',

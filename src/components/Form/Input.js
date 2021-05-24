@@ -101,8 +101,14 @@ const Input = () => {
   
 
   useEffect(()=> {
-    fetchFaculties()
-      .then((res) => setFac(res.data.faculties));
+    const fetchTeachers = async() => {
+      await fetchFaculties()
+      .then((res) => {
+        setFac(res.data.faculties);
+      })
+    };
+
+    fetchTeachers();
   },[])
 
 
