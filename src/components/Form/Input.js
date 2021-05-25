@@ -3,6 +3,7 @@ import {Grid, Paper, TextField, Container, Typography, Button} from '@material-u
 import {makeStyles} from '@material-ui/core/styles';
 
 import TableData from './Table';
+// import TableDa from './Hello';
 
 import {fetchFaculties} from '../../components/api/api';
 
@@ -133,7 +134,8 @@ const handleClick = () => {
   const data= {instructorName: teacher,
   beginDateTime:stT,
   endDateTime:enT,  
-   standard : cls};
+   standard : cls,
+  limit:10000};
 
    setUser(data);
    setClick(true);

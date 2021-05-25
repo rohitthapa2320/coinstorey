@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const url = 'http://13.235.115.31:3000/admin/dashboard/classes/getFaculties';
+const url = 'https://studypodapi.askiitians.com/admin/dashboard/classes/getFaculties';
 
-const uri = 'http://13.235.115.31:3000/admin/dashboard/classes/filterClasses';
+const uri = 'https://studypodapi.askiitians.com/admin/dashboard/classes/filterClasses';
 
 export const fetchFaculties= async() => {
   return await axios.get(url);
